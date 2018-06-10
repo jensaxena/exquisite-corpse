@@ -1,0 +1,55 @@
+// Color
+
+$color-accent-c:   #57652a
+$color-accent-w:   #b82601
+$color-neutral-dk: #262228
+$color-neutral-lt: #dfdce3
+$color-neutral-md: #dcc7aa
+
+// Layout
+
+$space-x: 2rem
+$space-y: 2rem
+$spacing: $space-y $space-x
+
+%flex-x
+  align-items: flex-start
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+%flex-y
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+
+%wrapper
+  margin: 0 auto
+  max-width: 1200px
+  width: 90vw
+
+// Type
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Averia+Serif+Libre')
+
+$font-content: 'Averia Serif Libre', serif
+$font-display: 'Allura', serif
+
+$type-lg: calc(4.2rem + (64 - 42) * ((100vw - 320px) / (1600 - 320)))
+$type-sm: 1.8rem
+
+%headers
+  h1, h2, h3
+    font-size: $type-lg
+    line-height: 1
+    margin: 0 auto
+
+%content
+  p
+    font-size: $type-sm
+    line-height: 1.5
+    margin: 0 auto
+    padding: $spacing
+    max-width: 55rem
