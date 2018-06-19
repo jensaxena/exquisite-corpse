@@ -12,7 +12,7 @@
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
   },
-"proxy": "http://localhost:8080/",
+  "proxy": "http://localhost:8080/",
   "scripts": {
     "build": "npm-run-all build-css build-js",
     "build-css": "node-sass-chokidar src/ -o src/",
@@ -20,7 +20,7 @@
     "client": "react-scripts start",
     "eject": "react-scripts eject",
     "server": "nodemon lib/server.js --ignore src/",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" \"npm run watch-css\" \"npm run watch-js\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" \"npm run watch-css\" ",
     "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
